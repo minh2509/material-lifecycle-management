@@ -64,7 +64,7 @@
   justify-content: center;
 }
 
-.btn-stitch-primary {
+.btn-ui-primary {
   background: var(--primary);
   color: #fff;
   border: 1px solid var(--primary);
@@ -83,17 +83,17 @@
   box-shadow: var(--shadow-subtle);
   text-decoration: none;
 }
-.btn-stitch-primary:hover {
+.btn-ui-primary:hover {
   background: var(--primary-hover);
   border-color: var(--primary-hover);
   color: #fff;
 }
-.btn-stitch-primary:active {
+.btn-ui-primary:active {
   background: var(--primary-active);
   transform: translateY(1px);
 }
 
-.btn-stitch-secondary {
+.btn-ui-secondary {
   background: var(--surface);
   color: var(--on-surface);
   border: 1px solid var(--outline);
@@ -112,16 +112,16 @@
   box-shadow: var(--shadow-subtle);
   transition: all 0.12s ease;
 }
-.btn-stitch-secondary:hover {
+.btn-ui-secondary:hover {
   background: var(--surface-container);
   color: var(--on-surface);
   border-color: var(--secondary);
 }
-.btn-stitch-secondary:active {
+.btn-ui-secondary:active {
   transform: translateY(1px);
 }
 
-.btn-stitch-outline-sm {
+.btn-ui-outline-sm {
   background: var(--surface);
   border: 1px solid var(--outline);
   border-radius: var(--radius-md);
@@ -139,15 +139,15 @@
   transition: all 0.12s ease;
   text-decoration: none;
 }
-.btn-stitch-outline-sm:hover:not(:disabled) {
+.btn-ui-outline-sm:hover:not(:disabled) {
   background: var(--surface-container);
   border-color: var(--secondary);
   color: var(--on-surface);
 }
-.btn-stitch-outline-sm:active:not(:disabled) {
+.btn-ui-outline-sm:active:not(:disabled) {
   transform: translateY(1px);
 }
-.btn-stitch-outline-sm:disabled {
+.btn-ui-outline-sm:disabled {
   opacity: 0.45;
   cursor: not-allowed;
 }

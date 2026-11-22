@@ -104,7 +104,7 @@ export function ReceiptPage() {
       <ReceiptFilters activeTab={activeTab} filterStatus={filterStatus} filterWarehouse={filterWarehouse} searchTerm={searchTerm} setFilterStatus={setFilterStatus} setFilterWarehouse={setFilterWarehouse} setSearchTerm={setSearchTerm} state={state} />
 
       {/* Main Table Card */}
-      <div className="stitch-card p-0 overflow-hidden d-flex flex-column">
+      <div className="ui-card p-0 overflow-hidden d-flex flex-column">
         {activeTab === "receipts" ? (
           <ReceiptTable
             receipts={filteredReceipts}

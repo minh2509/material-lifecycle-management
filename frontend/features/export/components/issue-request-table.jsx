@@ -66,7 +66,7 @@ export function IssueRequestTable({ requests = [], onCreateIssueFromRequest }) {
                   {!allSupplied && (
                     <Button
                       type="button"
-                      variant="primary" className="btn-stitch-table-action"
+                      variant="primary" className="btn-ui-table-action"
                       onClick={() => onCreateIssueFromRequest(req)}
                       title="Lập phiếu xuất kho cho yêu cầu này"
                     >

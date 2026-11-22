@@ -61,7 +61,7 @@ export function AuditPage() {
       {/* Enterprise Summary Strip: Chỉ số tổng hợp nhanh */}
       <AuditSummary audits={audits} />
 
-      <div className="stitch-card p-0 overflow-hidden d-flex flex-column">
+      <div className="ui-card p-0 overflow-hidden d-flex flex-column">
         <div className="p-3 bg-light border-bottom border-outline-variant fw-semibold text-dark small">
           Danh sách các đợt kiểm kê định kỳ
         </div>
@@ -93,13 +93,13 @@ export function AuditPage() {
                     </td>
                     <td className="text-end">
                       <div className="d-flex align-items-center justify-content-end gap-1.5 flex-nowrap">
-                        <Button type="button" variant="outline" className="btn-stitch-table-action" onClick={() => handleOpenDetail(a)}>
+                        <Button type="button" variant="outline" className="btn-ui-table-action" onClick={() => handleOpenDetail(a)}>
                           Chi tiết lệch
                         </Button>
                         {!isApproved && (
                           <Button
                             type="button"
-                            variant="primary" className="btn-stitch-table-action"
+                            variant="primary" className="btn-ui-table-action"
                             onClick={() => handleApproveAdjustment(a.id)}
                             title="Trưởng phòng duyệt giải trình và cho phép điều chỉnh tồn"
                           >

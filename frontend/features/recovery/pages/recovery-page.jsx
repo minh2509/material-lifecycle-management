@@ -144,7 +144,7 @@ export function RecoveryPage() {
       </div>
 
       {activeTab === "recoveries" && (
-        <div className="stitch-card p-3">
+        <div className="ui-card p-3">
           <div className="row g-3 align-items-end">
             <div className="col-12 col-md-6">
               <label htmlFor="rec-search" className="form-label small fw-semibold text-dark mb-1">Tìm kiếm theo mã phiếu hoặc nội dung</label>
@@ -175,7 +175,7 @@ export function RecoveryPage() {
         </div>
       )}
 
-      <div className="stitch-card p-0 overflow-hidden d-flex flex-column">
+      <div className="ui-card p-0 overflow-hidden d-flex flex-column">
         {activeTab === "recoveries" && (
           <RecoveryTable recoveries={filteredRecoveries} onSelectRecovery={handleSelectRecovery} />
         )}

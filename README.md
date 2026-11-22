@@ -33,4 +33,4 @@ Windows dùng mvnw.cmd. Backend local ở http://127.0.0.1:8081, health tại /a
 
 Frontend đang dùng fixture và prototype store; backend mới là bộ khung, hai phía chưa nối API nghiệp vụ. Các lỗi prototype về lưu/duyệt, kiểm kê, validation số lượng và liên kết liên màn vẫn cần được xử lý khi triển khai chức năng. Test/build thành công không có nghĩa các nghiệp vụ đã hoàn tất.
 
-Repository chỉ chứa sản phẩm và các file cần để nhóm clone/chạy/kiểm thử; không chứa tài liệu khách hàng gốc hoặc bộ công cụ/quy trình làm việc cá nhân.
+Repository gồm mã nguồn, cấu hình, kiểm thử và dữ liệu minh họa cần để chạy hai ứng dụng.

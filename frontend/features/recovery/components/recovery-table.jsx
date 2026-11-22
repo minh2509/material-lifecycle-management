@@ -57,7 +57,7 @@ export function RecoveryTable({ recoveries = [], onSelectRecovery }) {
                 <td className="text-end">
                   <Button
                     type="button"
-                    variant="outline" className="btn-stitch-table-action"
+                    variant="outline" className="btn-ui-table-action"
                     onClick={() => onSelectRecovery(rec)}
                     title="Xem chi tiết phiếu và trạng thái phân luồng"
                   >

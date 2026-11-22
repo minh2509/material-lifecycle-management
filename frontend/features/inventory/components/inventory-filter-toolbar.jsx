@@ -26,7 +26,7 @@ export function InventoryFilterToolbar({
   ];
 
   return (
-    <div className="stitch-card p-3 p-md-3.5">
+    <div className="ui-card p-3 p-md-3.5">
       <div className="row g-3 align-items-end">
         <div className="col-12 col-md-4">
           <label htmlFor="search-input" className="form-label small fw-semibold text-dark mb-1.5" style={{ fontSize: "12.5px" }}>

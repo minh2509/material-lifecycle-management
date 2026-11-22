@@ -62,7 +62,7 @@ export function InventoryDetailPage({ detailList = [] }) {
 
         <Link
           to="/"
-          className="btn-stitch-secondary"
+          className="btn-ui-secondary"
           style={{ minHeight: "36px" }}
         >
           <Icon name="arrow_back" size={16} />

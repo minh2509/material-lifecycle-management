@@ -36,8 +36,8 @@
 }
 
 /* Button active tactile feedback */
-.btn-stitch-primary:active,
-.btn-stitch-secondary:active,
-.btn-stitch-outline-sm:active {
+.btn-ui-primary:active,
+.btn-ui-secondary:active,
+.btn-ui-outline-sm:active {
   transform: translateY(1px);
 }

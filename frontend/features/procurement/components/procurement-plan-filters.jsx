@@ -5,7 +5,7 @@ import { Icon } from "../../../design-system/icon/icon.jsx";
 
 export function ProcurementPlanFilters({ filterStatus, searchTerm, setFilterStatus, setSearchTerm, state }) {
   return (
-    <div className="stitch-card p-3">
+    <div className="ui-card p-3">
       <div className="d-flex align-items-center justify-content-between flex-wrap gap-2 pb-2.5 mb-2.5 border-bottom border-outline-variant">
         <span className="small text-muted fw-semibold" style={{ fontSize: "12px" }}>Lọc nhanh trạng thái hồ sơ:</span>
         <div className="quick-status-filter-group">

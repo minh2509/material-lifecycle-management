@@ -1,5 +1,5 @@
-/* Stitch Standard Cards */
-.stitch-card {
+/* UI Standard Cards */
+.ui-card {
   background: var(--surface);
   border: 1px solid var(--outline-variant);
   border-radius: var(--radius-md);

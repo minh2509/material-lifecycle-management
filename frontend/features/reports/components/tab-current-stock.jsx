@@ -34,7 +34,7 @@ export function TabCurrentStock({ lots = [] }) {
                     <td><span className="code-chip">{l.materialCode}</span></td>
                     <td className="small text-dark fw-medium">{l.materialName}</td>
                     <td>
-                      <span className={`stitch-badge ${l.condition === "Mới" ? "stitch-badge-success" : "stitch-badge-neutral"}`}>
+                      <span className={`ui-badge ${l.condition === "Mới" ? "ui-badge-success" : "ui-badge-neutral"}`}>
                         {l.condition}
                       </span>
                     </td>
@@ -76,7 +76,7 @@ export function TabCurrentStock({ lots = [] }) {
                   <td><span className="code-chip">{l.materialCode}</span></td>
                   <td className="small text-dark fw-medium">{l.materialName}</td>
                   <td>
-                    <span className="stitch-badge stitch-badge-warning">{l.condition}</span>
+                    <span className="ui-badge ui-badge-warning">{l.condition}</span>
                   </td>
                   <td><span className="small text-dark">{l.warehouse}</span></td>
                   <td className="text-end font-mono fw-bold text-dark">{l.availableQuantity} {l.unit}</td>

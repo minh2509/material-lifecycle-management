@@ -60,7 +60,7 @@ export function ReceiptTable({ receipts = [], onSelectReceipt, onConfirmReceipt 
                   <div className="d-flex align-items-center justify-content-end gap-1.5 flex-nowrap">
                     <Button
                       type="button"
-                      variant="outline" className="btn-stitch-table-action"
+                      variant="outline" className="btn-ui-table-action"
                       onClick={() => onSelectReceipt(r)}
                       title="Xem chi tiết phiếu nhập"
                     >
@@ -69,7 +69,7 @@ export function ReceiptTable({ receipts = [], onSelectReceipt, onConfirmReceipt 
                     {!isConfirmed && (
                       <Button
                         type="button"
-                        variant="primary" className="btn-stitch-table-action"
+                        variant="primary" className="btn-ui-table-action"
                         onClick={() => onConfirmReceipt(r.id)}
                         title="Xác nhận nhập kho vật lý (Thủ kho)"
                       >

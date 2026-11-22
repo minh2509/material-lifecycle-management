@@ -83,7 +83,7 @@ export function ProcurementPlanPage() {
 
       <ProcurementPlanFilters filterStatus={filterStatus} searchTerm={searchTerm} setFilterStatus={setFilterStatus} setSearchTerm={setSearchTerm} state={state} />
 
-      <div className="stitch-card p-0 overflow-hidden d-flex flex-column">
+      <div className="ui-card p-0 overflow-hidden d-flex flex-column">
         <ProcurementPlanTable
           plans={filteredPlans}
           onSelectPlan={handleSelectPlan}

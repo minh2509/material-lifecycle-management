@@ -82,8 +82,8 @@
   font-variant-numeric: tabular-nums;
 }
 
-/* Stitch Standard Uniform Button (formerly Pill) */
-.btn-stitch-pill {
+/* Nút dùng chung */
+.btn-ui-pill {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -102,12 +102,12 @@
   transition: all 0.15s ease-in-out;
   flex-shrink: 0;
 }
-.btn-stitch-pill:hover {
+.btn-ui-pill:hover {
   background: var(--surface-container);
   color: var(--on-surface);
   border-color: var(--secondary);
 }
-.btn-stitch-pill.active {
+.btn-ui-pill.active {
   background: var(--primary);
   color: var(--on-primary);
   border-color: var(--primary);

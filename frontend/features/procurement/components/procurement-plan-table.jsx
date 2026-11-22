@@ -55,7 +55,7 @@ export function ProcurementPlanTable({ plans = [], onSelectPlan, onApprovePlan }
                   <div className="d-flex align-items-center justify-content-end gap-1.5 flex-nowrap">
                     <Button
                       type="button"
-                      variant="outline" className="btn-stitch-table-action"
+                      variant="outline" className="btn-ui-table-action"
                       onClick={() => onSelectPlan(p)}
                       title="Xem chi tiết các dòng vật tư và tiến độ nhập"
                     >
@@ -64,7 +64,7 @@ export function ProcurementPlanTable({ plans = [], onSelectPlan, onApprovePlan }
                     {!isApproved && (
                       <Button
                         type="button"
-                        variant="primary" className="btn-stitch-table-action"
+                        variant="primary" className="btn-ui-table-action"
                         onClick={() => onApprovePlan(p.id)}
                         title="Phê duyệt hồ sơ dự trù (Trưởng phòng)"
                       >

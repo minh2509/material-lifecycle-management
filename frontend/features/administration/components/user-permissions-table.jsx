@@ -5,7 +5,7 @@ import { Badge } from "../../../design-system/badge/badge.jsx";
 
 export function UserPermissionsTable({ activeTab, handleTogglePermission, modules, selectedRole, setSelectedRole, state }) {
   return (
-    <div className="stitch-card p-0 overflow-hidden d-flex flex-column">
+    <div className="ui-card p-0 overflow-hidden d-flex flex-column">
       {activeTab === "users" ? (
         <div className="table-responsive border-0 rounded-0">
           <Table variant="standard" >

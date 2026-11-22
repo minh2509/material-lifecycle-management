@@ -55,7 +55,7 @@ export function NormPage() {
         </div>
       </div>
 
-      <div className="stitch-card p-3">
+      <div className="ui-card p-3">
         <div className="row g-3 align-items-end">
           <div className="col-12 col-md-6">
             <label htmlFor="norm-search" className="form-label small fw-semibold text-dark mb-1">Tìm kiếm theo mã hoặc tên vật tư</label>
@@ -67,7 +67,7 @@ export function NormPage() {
         </div>
       </div>
 
-      <div className="stitch-card p-0 overflow-hidden d-flex flex-column">
+      <div className="ui-card p-0 overflow-hidden d-flex flex-column">
         <div className="table-responsive border-0 rounded-0">
           <Table variant="standard" >
             <thead>
@@ -88,7 +88,7 @@ export function NormPage() {
                   <td className="fw-medium text-dark small">{n.name}</td>
                   <td className="text-muted small">{n.unit}</td>
                   <td className="text-end">
-                    <span className="stitch-badge stitch-badge-warning font-mono" style={{ fontSize: "11.5px" }}>
+                    <span className="ui-badge ui-badge-warning font-mono" style={{ fontSize: "11.5px" }}>
                       Chưa có dữ liệu
                     </span>
                   </td>

@@ -4,7 +4,7 @@ Tài liệu dành cho thành viên phát triển frontend. Đọc tài liệu n�
 
 Frontend theo hướng **Modular Monolith + Feature-based Architecture + Design System**: một ứng dụng React, chia theo nghiệp vụ và dùng chung chuẩn giao diện. Mục tiêu là sửa một chức năng mà không phải hiểu hoặc thay toàn bộ ứng dụng.
 
-Giao diện hiện tại là khuôn prototype đã được chủ dự án chọn. Khi triển khai nghiệp vụ thật, giữ khuôn này và bổ sung hành vi theo đặc tả của chức năng. Dữ liệu mẫu, nút phê duyệt và tài khoản minh họa không phải bằng chứng về quy tắc nghiệp vụ, phân quyền hoặc backend đã hoàn thành.
+Giao diện hiện tại là prototype của ứng dụng. Khi triển khai nghiệp vụ thật, giữ khuôn này và bổ sung hành vi theo đặc tả của chức năng. Dữ liệu mẫu, nút phê duyệt và tài khoản minh họa không phải bằng chứng về quy tắc nghiệp vụ, phân quyền hoặc backend đã hoàn thành.
 
 ## 1. Bắt đầu đọc từ đâu?
 
@@ -125,7 +125,7 @@ Prototype hiện chưa có một nguồn backend thống nhất. Khi sửa một
 
 Điểm đọc: [useCatalogQuery/useProvenanceQuery](shared/hooks/use-catalog-query.js), [catalog-service](infrastructure/api/catalog-service.js), [api-client](infrastructure/api/api-client.js).
 
-Catalog JSON trong [public/demo](public/demo/) là fixture được đóng gói để clone chạy được, không phải API CRUD vật tư. File nguồn khách hàng và bộ công cụ làm việc cá nhân không nằm trong repository này; không cần chúng để build hoặc chạy demo.
+Catalog JSON trong [public/demo](public/demo/) là fixture được đóng gói để clone chạy được, không phải API CRUD vật tư. Ứng dụng build và chạy demo trực tiếp từ JSON đi kèm.
 
 [useInventoryWorkspace](features/inventory/hooks/use-inventory-workspace.js) kết hợp catalog với kịch bản minh họa và phép tính tồn của inventory. [App](app/app.jsx) đang gọi public hook này để giữ workspace, xử lý tải/lỗi và truyền dữ liệu vào router. Giữ điểm ghép hiện có khi sửa UI; không tự nâng toàn bộ state feature lên app.
 
@@ -265,6 +265,6 @@ Khi đổi ranh giới module hoặc cách làm việc, cập nhật tài liệu
 
 Các luồng lưu-duyệt mua sắm, lưu giải trình kiểm kê, validation số lượng nhập/xuất và liên kết thu hồi/sửa chữa vẫn cần hoàn thiện khi phát triển chức năng. Catalog hiện được tải ở cấp App, nên lỗi catalog có thể chặn cả các route khác. Không dùng hành vi mẫu làm chuẩn nghiệm thu nghiệp vụ.
 
-## Đối chiếu thư mục làm việc
+## Cấu trúc thư mục
 
-Thư mục frontend của repo tương ứng trực tiếp với src/frontend trong workspace gốc: app, features, design-system, shared, infrastructure, styles và main.jsx nằm ngay trong frontend, không thêm một tầng src. Package/config/tests/public-demo được đặt cùng bên trong frontend để thành viên clone chạy độc lập.
+Code ứng dụng nằm trực tiếp trong app, features, design-system, shared, infrastructure, styles và main.jsx. Package/config/tests/public-demo được đặt cùng bên trong frontend để thành viên clone chạy độc lập.

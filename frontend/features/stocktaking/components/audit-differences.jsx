@@ -3,7 +3,7 @@ import { Table } from "../../../design-system/table/table.jsx";
 export function AuditDifferences({ handleOpenExplain, selectedAudit, setSelectedAudit }) {
   return (
     selectedAudit && (
-      <div className="stitch-card p-0 overflow-hidden d-flex flex-column">
+      <div className="ui-card p-0 overflow-hidden d-flex flex-column">
         <div className="p-3 bg-light border-bottom border-outline-variant d-flex justify-content-between align-items-center">
           <span className="fw-bold text-dark small">
             Chi tiết đối soát chênh lệch: {selectedAudit.name} ({selectedAudit.id})
@@ -46,7 +46,7 @@ export function AuditDifferences({ handleOpenExplain, selectedAudit, setSelected
                     )}
                   </td>
                   <td>
-                    <span className={`stitch-badge ${it.adjusted ? "stitch-badge-success" : "stitch-badge-neutral"}`}>
+                    <span className={`ui-badge ${it.adjusted ? "ui-badge-success" : "ui-badge-neutral"}`}>
                       {it.adjusted ? "Đã điều chỉnh" : "Chưa điều chỉnh"}
                     </span>
                   </td>

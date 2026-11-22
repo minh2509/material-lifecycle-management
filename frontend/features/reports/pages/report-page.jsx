@@ -53,7 +53,7 @@ export function ReportPage() {
         </Button>
       </div>
 
-      <div className="stitch-card p-0 overflow-hidden d-flex flex-column">
+      <div className="ui-card p-0 overflow-hidden d-flex flex-column">
         {activeTab === "current" && <TabCurrentStock lots={state.lots || []} />}
         {activeTab === "inout" && <TabInOutInventory />}
         {activeTab === "monthly" && <TabMonthlySummary />}

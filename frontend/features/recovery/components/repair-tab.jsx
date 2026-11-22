@@ -63,7 +63,7 @@ export function RepairTab({ repairs = [] }) {
                   {rp.restoredUnitPrice ? `${rp.restoredUnitPrice.toLocaleString("vi-VN")} đ` : "—"}
                 </td>
                 <td>
-                  <span className="stitch-badge stitch-badge-success">{rp.status}</span>
+                  <span className="ui-badge ui-badge-success">{rp.status}</span>
                 </td>
               </tr>
             ))}

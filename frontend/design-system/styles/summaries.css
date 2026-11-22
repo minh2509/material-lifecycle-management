@@ -105,7 +105,7 @@
 }
 
 /* 3. Data Grid High-Density Polish */
-.stitch-table thead th {
+.ui-table thead th {
   background-color: var(--surface-low) !important;
   border-bottom: 2px solid var(--outline) !important;
   color: var(--on-surface-variant) !important;
@@ -113,6 +113,6 @@
   font-weight: 700 !important;
   letter-spacing: 0.03em !important;
 }
-.stitch-table tbody tr:hover td {
+.ui-table tbody tr:hover td {
   background-color: #F8FAFC !important;
 }

@@ -61,7 +61,7 @@ export function IssueTable({ issues = [], onSelectIssue, onConfirmIssue, onPrint
                   <div className="d-flex align-items-center justify-content-end gap-1.5 flex-nowrap">
                     <Button
                       type="button"
-                      variant="outline" className="btn-stitch-table-action"
+                      variant="outline" className="btn-ui-table-action"
                       onClick={() => onSelectIssue(iss)}
                       title="Xem chi tiết các dòng vật tư và lô xuất"
                     >
@@ -70,7 +70,7 @@ export function IssueTable({ issues = [], onSelectIssue, onConfirmIssue, onPrint
                     {!isDispatched && (
                       <Button
                         type="button"
-                        variant="primary" className="btn-stitch-table-action"
+                        variant="primary" className="btn-ui-table-action"
                         onClick={() => onConfirmIssue(iss.id)}
                         title="Trưởng phòng xác nhận xuất: giảm kho và tăng lượng nhận phân xưởng"
                       >
@@ -79,7 +79,7 @@ export function IssueTable({ issues = [], onSelectIssue, onConfirmIssue, onPrint
                     )}
                     <Button
                       type="button"
-                      variant="outline" className="btn-stitch-table-action px-2"
+                      variant="outline" className="btn-ui-table-action px-2"
                       onClick={() => onPrintIssue(iss)}
                       title="In phiếu xuất kho theo mẫu"
                     >

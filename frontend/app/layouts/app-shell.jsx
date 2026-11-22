@@ -71,7 +71,7 @@ export function AppShell({ children, provenance }) {
         </div>
       </div>
 
-      {/* Toast Notification (Chuẩn UX Viettel Slide 6 & Slide 19) */}
+      {/* Thông báo dùng chung */}
       {toast && (
         <div className="toast-notice shadow-sm" role="status" style={{ minWidth: "280px" }}>
           <Icon name={toast.type === "error" ? "warning" : "info"} size={16} color={toast.type === "error" ? "#EF4444" : "#38BDF8"} />

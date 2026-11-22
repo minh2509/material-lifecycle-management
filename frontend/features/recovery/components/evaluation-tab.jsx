@@ -81,14 +81,14 @@ export function EvaluationTab({ recoveries = [], onEvaluateItem }) {
                   <td className="text-end font-mono text-primary">{it.evaluation?.repairQty ?? "—"}</td>
                   <td className="text-end font-mono text-danger">{it.evaluation?.scrapQty ?? "—"}</td>
                   <td>
-                    <span className={`stitch-badge ${it.evaluation?.status === "Đã đánh giá" ? "stitch-badge-success" : "stitch-badge-warning"}`}>
+                    <span className={`ui-badge ${it.evaluation?.status === "Đã đánh giá" ? "ui-badge-success" : "ui-badge-warning"}`}>
                       {it.evaluation?.status || "Chờ đánh giá"}
                     </span>
                   </td>
                   <td className="text-end">
                     <Button
                       type="button"
-                      variant="primary" className="btn-stitch-table-action"
+                      variant="primary" className="btn-ui-table-action"
                       onClick={() => handleOpenEval(rec, it)}
                       title="Thực hiện đánh giá kỹ thuật và phân luồng"
                     >

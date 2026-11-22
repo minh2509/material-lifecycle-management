@@ -39,7 +39,7 @@ export function LotTrackingTable({ lots = [] }) {
               <td className="font-mono small text-muted">{lot.importDate}</td>
               <td className="small text-muted font-mono">{lot.sourceDoc}</td>
               <td>
-                <span className={`stitch-badge ${lot.condition === "Mới" ? "stitch-badge-success" : "stitch-badge-neutral"}`}>
+                <span className={`ui-badge ${lot.condition === "Mới" ? "ui-badge-success" : "ui-badge-neutral"}`}>
                   {lot.condition}
                 </span>
               </td>

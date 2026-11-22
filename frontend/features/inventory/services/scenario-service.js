@@ -42,7 +42,7 @@ export function buildDemoScenario(items = []) {
       { materialCode: item.code, warehouse: "Kho B", date: "2026-11-18", type: "OUT", quantity: outQtyB }
     );
 
-    // Specifically for GL-001 (Gỗ chèn lò) adjust so total stock is 280 to match Stitch demo
+    // Specifically for GL-001 (Gỗ chèn lò) adjust so total stock is 280 to match UI demo
     if (item.code === "GL-001") {
       initialStocks.find((s) => s.materialCode === "GL-001" && s.warehouse === "Kho A").quantity = 150;
       initialStocks.find((s) => s.materialCode === "GL-001" && s.warehouse === "Kho B").quantity = 80;

@@ -113,7 +113,7 @@ export function IssuePage() {
         <IssueFilters filterShift={filterShift} filterWorkshop={filterWorkshop} searchTerm={searchTerm} setFilterShift={setFilterShift} setFilterWorkshop={setFilterWorkshop} setSearchTerm={setSearchTerm} state={state} />
       )}
 
-      <div className="stitch-card p-0 overflow-hidden d-flex flex-column">
+      <div className="ui-card p-0 overflow-hidden d-flex flex-column">
         {activeTab === "issues" && (
           <IssueTable issues={filteredIssues} onSelectIssue={handleSelectIssue} onConfirmIssue={handleConfirmIssue} onPrintIssue={handlePrint} />
         )}

@@ -40,7 +40,7 @@ export function DemandPlanPage() {
         </div>
       </div>
 
-      <div className="stitch-card p-5 text-center d-flex flex-column align-items-center gap-3">
+      <div className="ui-card p-5 text-center d-flex flex-column align-items-center gap-3">
         <div
           className="d-flex align-items-center justify-content-center rounded-circle bg-light border border-outline-variant"
           style={{ width: "64px", height: "64px" }}
@@ -52,8 +52,8 @@ export function DemandPlanPage() {
           Phân hệ "Kế hoạch nhu cầu" hiện là mục đề xuất trong bộ điều hướng. Khi khách hàng cung cấp căn cứ và quy trình lập kế hoạch (theo tháng/quý/năm hoặc theo tiến độ đào lò), hệ thống sẽ bổ sung biểu mẫu và các chỉ tiêu tương ứng.
         </div>
         <div className="d-flex gap-2 mt-2">
-          <span className="stitch-badge stitch-badge-neutral">Mã câu hỏi: TREO (S-01)</span>
-          <span className="stitch-badge stitch-badge-warning">Trạng thái: DEFERRED</span>
+          <span className="ui-badge ui-badge-neutral">Mã câu hỏi: TREO (S-01)</span>
+          <span className="ui-badge ui-badge-warning">Trạng thái: DEFERRED</span>
         </div>
       </div>
     </div>

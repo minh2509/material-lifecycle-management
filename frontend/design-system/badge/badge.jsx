@@ -1,15 +1,15 @@
 export function Badge({ variant = "neutral", children, className = "", noDot = false }) {
   const variantClass = {
-    neutral: "stitch-badge-neutral",
-    warning: "stitch-badge-warning",
-    success: "stitch-badge-success",
-    error: "stitch-badge-error",
-    info: "stitch-badge-info",
-    primary: "stitch-badge-primary",
-  }[variant] || "stitch-badge-neutral";
+    neutral: "ui-badge-neutral",
+    warning: "ui-badge-warning",
+    success: "ui-badge-success",
+    error: "ui-badge-error",
+    info: "ui-badge-info",
+    primary: "ui-badge-primary",
+  }[variant] || "ui-badge-neutral";
 
   return (
-    <span className={`stitch-badge ${variantClass} ${noDot ? "no-dot" : ""} ${className}`} role="status">
+    <span className={`ui-badge ${variantClass} ${noDot ? "no-dot" : ""} ${className}`} role="status">
       {children}
     </span>
   );

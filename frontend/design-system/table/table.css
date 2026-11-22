@@ -1,10 +1,10 @@
-/* Standard Stitch Table */
+/* Standard UI Table */
 .table-responsive {
   width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
-.stitch-table {
+.ui-table {
   width: 100%;
   border-collapse: collapse;
   text-align: left;
@@ -13,7 +13,7 @@
   border-top: 1px solid var(--outline-variant);
   border-bottom: 1px solid var(--outline-variant);
 }
-.stitch-table th {
+.ui-table th {
   background: var(--surface-low);
   border-bottom: 1px solid var(--outline);
   padding: 10px 14px;
@@ -36,16 +36,16 @@ label .text-danger {
   font-weight: 700;
   margin-left: 2px;
 }
-.stitch-table td {
+.ui-table td {
   padding: 11px 14px;
   border-bottom: 1px solid var(--outline-variant);
   color: var(--on-surface);
   vertical-align: middle;
 }
-.stitch-table tbody tr {
+.ui-table tbody tr {
   transition: background-color 0.1s ease;
 }
-.stitch-table tbody tr:hover td {
+.ui-table tbody tr:hover td {
   background-color: var(--surface-container);
 }
 

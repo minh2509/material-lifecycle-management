@@ -83,7 +83,7 @@ export function ProcurementExecPage() {
         </div>
       </div>
 
-      <div className="stitch-card p-3">
+      <div className="ui-card p-3">
         <div className="row g-3 align-items-end">
           <div className="col-12 col-md-6">
             <label htmlFor="exec-search" className="form-label small fw-semibold text-dark mb-1">Tìm kiếm theo hồ sơ, hợp đồng hoặc vật tư</label>
@@ -95,7 +95,7 @@ export function ProcurementExecPage() {
         </div>
       </div>
 
-      <div className="stitch-card p-0 overflow-hidden d-flex flex-column">
+      <div className="ui-card p-0 overflow-hidden d-flex flex-column">
         <div className="table-responsive border-0 rounded-0">
           <Table variant="standard" >
             <thead>

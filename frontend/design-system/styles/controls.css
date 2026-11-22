@@ -30,9 +30,9 @@
 }
 
 /* Đồng nhất các nút trong thanh toolbar lọc */
-.stitch-card .btn-outline-secondary,
-.stitch-card .btn-outline-secondary.btn-sm,
-.stitch-card .btn-secondary.btn-sm {
+.ui-card .btn-outline-secondary,
+.ui-card .btn-outline-secondary.btn-sm,
+.ui-card .btn-secondary.btn-sm {
   height: 36px !important;
   min-height: 36px !important;
   border-radius: var(--radius-md) !important;
@@ -49,8 +49,8 @@
   box-shadow: var(--shadow-subtle);
   transition: all 0.12s ease;
 }
-.stitch-card .btn-outline-secondary:hover,
-.stitch-card .btn-outline-secondary.btn-sm:hover {
+.ui-card .btn-outline-secondary:hover,
+.ui-card .btn-outline-secondary.btn-sm:hover {
   background-color: var(--surface-container) !important;
   border-color: var(--secondary) !important;
   color: var(--on-surface) !important;
@@ -93,12 +93,12 @@
 }
 
 /* Nút thao tác trong bảng dữ liệu: Đồng nhất tuyệt đối 28px, bo góc 6px, TUYỆT ĐỐI KHÔNG BỊ RỚT DÒNG CHỮ */
-.stitch-table .btn-stitch-primary,
-.stitch-table .btn-stitch-outline-sm,
-.stitch-table .btn-stitch-table-action,
-.stitch-table .btn-primary.btn-sm,
-.stitch-table .btn.btn-sm,
-.btn-stitch-table-action {
+.ui-table .btn-ui-primary,
+.ui-table .btn-ui-outline-sm,
+.ui-table .btn-ui-table-action,
+.ui-table .btn-primary.btn-sm,
+.ui-table .btn.btn-sm,
+.btn-ui-table-action {
   height: 28px !important;
   min-height: 28px !important;
   padding: 0 12px !important;
@@ -115,27 +115,27 @@
   text-decoration: none !important;
 }
 
-.stitch-table .btn-stitch-outline-sm,
-.btn-stitch-table-action.btn-stitch-outline-sm {
+.ui-table .btn-ui-outline-sm,
+.btn-ui-table-action.btn-ui-outline-sm {
   background: var(--surface) !important;
   border: 1px solid var(--outline) !important;
   color: var(--on-surface) !important;
 }
-.stitch-table .btn-stitch-outline-sm:hover,
-.btn-stitch-table-action.btn-stitch-outline-sm:hover {
+.ui-table .btn-ui-outline-sm:hover,
+.btn-ui-table-action.btn-ui-outline-sm:hover {
   background: var(--surface-container) !important;
   border-color: var(--secondary) !important;
   color: var(--on-surface) !important;
 }
 
-.stitch-table .btn-stitch-primary,
-.btn-stitch-table-action.btn-stitch-primary {
+.ui-table .btn-ui-primary,
+.btn-ui-table-action.btn-ui-primary {
   background: var(--primary) !important;
   border: 1px solid var(--primary) !important;
   color: #ffffff !important;
 }
-.stitch-table .btn-stitch-primary:hover,
-.btn-stitch-table-action.btn-stitch-primary:hover {
+.ui-table .btn-ui-primary:hover,
+.btn-ui-table-action.btn-ui-primary:hover {
   background: var(--primary-hover) !important;
   border-color: var(--primary-hover) !important;
   color: #ffffff !important;

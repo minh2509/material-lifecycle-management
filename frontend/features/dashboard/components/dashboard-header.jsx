@@ -82,7 +82,7 @@ export function DashboardHeader({ currentMonthMeta, periodKey, periods, selected
         {/* Nút Primary: Chi tiết tồn kho */}
         <Link
           to="/chi-tiet-ton-kho"
-          className="btn-stitch-primary"
+          className="btn-ui-primary"
         >
           <span>Chi tiết tồn kho</span>
           <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.1" viewBox="0 0 24 24">

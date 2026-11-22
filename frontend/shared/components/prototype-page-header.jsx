@@ -20,7 +20,7 @@ export function PrototypePageHeader({
           <Badge variant="neutral">Dữ liệu minh hoạ</Badge>
           {isProposed && (
             <span
-              className="stitch-badge stitch-badge-warning"
+              className="ui-badge ui-badge-warning"
               title="Điểm nghiệp vụ đang chờ khách hàng xác nhận"
             >
               {proposedText}

@@ -54,7 +54,7 @@ export function CatalogMasterPage({ catalogItems = [] }) {
         </Button>
       </div>
 
-      <div className="stitch-card p-0 overflow-hidden d-flex flex-column">
+      <div className="ui-card p-0 overflow-hidden d-flex flex-column">
         {activeTab === "materials" && <TabMaterial catalogItems={catalogItems} />}
         {activeTab === "warehouses" && (
           <TabWarehouse warehouses={state.warehouses || []} onAddWarehouse={(wh) => store.addWarehouse(wh)} />

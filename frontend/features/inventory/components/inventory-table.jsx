@@ -4,7 +4,7 @@ import { Icon } from "../../../design-system/icon/icon.jsx";
 
 export function InventoryTable({ PAGE_SIZE, currentPage, filterWarehouse, filtered, handleReset, paginatedItems, setCurrentPage, totalPages }) {
   return (
-    <div className="stitch-card p-0 overflow-hidden d-flex flex-column">
+    <div className="ui-card p-0 overflow-hidden d-flex flex-column">
       <div className="table-responsive border-0 rounded-0">
         <Table variant="standard" >
           <thead>

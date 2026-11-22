@@ -42,7 +42,7 @@ export function Icon({ name, size = 18, className = "", color = "currentColor", 
     strokeWidth: 2,
     strokeLinecap: "round",
     strokeLinejoin: "round",
-    className: `stitch-icon ${className}`,
+    className: `ui-icon ${className}`,
     ...props,
   };
 

@@ -1,7 +1,7 @@
 const VARIANTS = {
-  primary: "btn-stitch-primary",
-  secondary: "btn-stitch-secondary",
-  outline: "btn-stitch-outline-sm",
+  primary: "btn-ui-primary",
+  secondary: "btn-ui-secondary",
+  outline: "btn-ui-outline-sm",
 };
 
 export function Button({ variant, className = "", ...props }) {

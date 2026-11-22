@@ -72,7 +72,7 @@ export function TabRecoveryRate() {
                     {r.rate !== null ? (
                       <span className="text-primary">{r.rate}</span>
                     ) : (
-                      <span className="stitch-badge stitch-badge-warning" style={{ fontSize: "11px" }}>Chưa có cơ sở tính</span>
+                      <span className="ui-badge ui-badge-warning" style={{ fontSize: "11px" }}>Chưa có cơ sở tính</span>
                     )}
                   </td>
                   <td className="small text-muted">{r.status}</td>

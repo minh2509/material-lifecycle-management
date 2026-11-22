@@ -34,7 +34,7 @@ export function MobileNavigation({ isCurrent, mobileMenuOpen, setMobileMenuOpen 
                 <Icon name={item.icon} size={18} />
                 <span className="flex-grow-1">{item.label}</span>
                 {!item.available && (
-                  <span className="stitch-badge stitch-badge-neutral text-muted">
+                  <span className="ui-badge ui-badge-neutral text-muted">
                     Chưa mở
                   </span>
                 )}
