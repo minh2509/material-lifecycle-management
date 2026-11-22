@@ -4,9 +4,10 @@ import { readdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const root = fileURLToPath(new URL('../../src/', import.meta.url));
+const root = fileURLToPath(new URL('../../', import.meta.url));
 async function filesIn(directory) {
-  const entries = await readdir(directory, { withFileTypes: true });
+  const entries = (await readdir(directory, { withFileTypes: true }))
+    .filter(entry => directory !== root || !['node_modules', 'dist', 'tests'].includes(entry.name));
   return (await Promise.all(entries.map(entry => entry.isDirectory()
     ? filesIn(path.join(directory, entry.name)) : path.join(directory, entry.name)))).flat();
 }

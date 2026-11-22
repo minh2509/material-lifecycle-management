@@ -1,10 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { INITIAL_STORE } from '../../src/infrastructure/prototype/data/initial-store.js';
-import { createReceiptsActions } from '../../src/infrastructure/prototype/actions/receipts-actions.js';
-import { createIssuesActions } from '../../src/infrastructure/prototype/actions/issues-actions.js';
-import { procurementPlanSchema } from '../../src/features/procurement/schemas/procurement-plan-schema.js';
-import { normalizeWarehouse, selectCurrentFlow } from '../../src/features/dashboard/services/dashboard-selectors.js';
+import { INITIAL_STORE } from '../../infrastructure/prototype/data/initial-store.js';
+import { createReceiptsActions } from '../../infrastructure/prototype/actions/receipts-actions.js';
+import { createIssuesActions } from '../../infrastructure/prototype/actions/issues-actions.js';
+import { procurementPlanSchema } from '../../features/procurement/schemas/procurement-plan-schema.js';
+import { normalizeWarehouse, selectCurrentFlow } from '../../features/dashboard/services/dashboard-selectors.js';
 
 function workspace() {
   let state = structuredClone(INITIAL_STORE), commits = 0;
@@ -76,7 +76,7 @@ test('dashboard selectors retain warehouse aliases and monthly/six-month totals'
 });
 
 test('prototype storage retains namespaced values and tolerates corrupt/unavailable storage', async () => {
-  const { loadPrototypeStore, persistPrototypeStore } = await import('../../src/infrastructure/storage/prototype-storage.js');
+  const { loadPrototypeStore, persistPrototypeStore } = await import('../../infrastructure/storage/prototype-storage.js');
   const original = globalThis.localStorage;
   const values = new Map([['unrelated-key', 'keep']]);
   globalThis.localStorage = { getItem: key => values.get(key) || null, setItem: (key, value) => values.set(key, value) };

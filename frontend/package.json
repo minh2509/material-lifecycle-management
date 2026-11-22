@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "data:check": "node --test tests/demo-data.test.js",
-    "lint": "eslint src tests vite.config.js eslint.config.js --max-warnings=0",
+    "lint": "eslint . --max-warnings=0",
     "prebuild": "npm run data:check",
     "build": "vite build",
     "dev": "vite --host 127.0.0.1 --port 5173 --strictPort",
