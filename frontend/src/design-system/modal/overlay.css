@@ -1,0 +1,48 @@
+/* Drawers & Modals */
+.drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.35);
+  z-index: 1040;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.mobile-offcanvas-drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 280px;
+  background: var(--surface);
+  border-right: 1px solid var(--outline-variant);
+  z-index: 1050;
+  display: flex;
+  flex-direction: column;
+  animation: slideInLeft 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 4px 0 24px rgba(15, 23, 42, 0.15);
+}
+@keyframes slideInLeft {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+.drawer-right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 460px;
+  background: var(--surface);
+  border-left: 1px solid var(--outline-variant);
+  box-shadow: var(--shadow-drawer);
+  z-index: 1050;
+  display: flex;
+  flex-direction: column;
+  animation: slideInRight 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes slideInRight {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}

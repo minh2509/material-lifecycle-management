@@ -1,0 +1,17 @@
+/* Informational Callout */
+.info-callout {
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-container-low);
+  border: 1px solid var(--outline-variant);
+  font-size: 12.5px;
+  color: var(--on-surface-variant);
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+/* Eliminate layout property animation from Bootstrap collapse */
+.collapsing {
+  transition: opacity 0.15s ease !important;
+}

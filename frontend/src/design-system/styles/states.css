@@ -1,0 +1,43 @@
+/* Prototype utilities */
+.border-outline-variant {
+  border-color: var(--outline-variant) !important;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Skeleton loader matching table shape — Clean flat opacity pulse, ZERO GRADIENTS */
+.skeleton-box {
+  display: inline-block;
+  height: 14px;
+  background-color: var(--surface-container);
+  border-radius: var(--radius-sm);
+  position: relative;
+  overflow: hidden;
+  animation: skeletonPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes skeletonPulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.45;
+  }
+}
+
+/* Button active tactile feedback */
+.btn-stitch-primary:active,
+.btn-stitch-secondary:active,
+.btn-stitch-outline-sm:active {
+  transform: translateY(1px);
+}

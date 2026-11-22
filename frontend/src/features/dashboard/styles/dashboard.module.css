@@ -1,0 +1,14 @@
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #262626;
+  letter-spacing: -0.015em;
+}
+
+.movementCard {
+  min-height: 415px;
+}
+
+.chart {
+  min-height: 245px;
+}

@@ -1,0 +1,68 @@
+/* Status Indicators & Clean Badges — No Clunky Box Wrapping (Loại bỏ bọc hộp quê mùa) */
+.stitch-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  font-size: 12.5px !important;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+  white-space: nowrap !important;
+  box-shadow: none !important;
+}
+
+/* Status Dot: Tín hiệu trạng thái hình tròn thanh lịch 6.5px chuẩn Enterprise */
+.stitch-badge::before {
+  content: "";
+  display: inline-block;
+  width: 6.5px;
+  height: 6.5px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Ẩn dot nếu đã có icon SVG con bên trong hoặc có class no-dot */
+.stitch-badge:has(svg)::before,
+.stitch-badge.no-dot::before {
+  display: none !important;
+}
+
+.stitch-badge-neutral {
+  color: #475569 !important;
+}
+.stitch-badge-neutral::before {
+  background-color: #94A3B8;
+}
+
+.stitch-badge-warning {
+  color: #9A3412 !important;
+}
+.stitch-badge-warning::before {
+  background-color: #C2410C;
+}
+
+.stitch-badge-success {
+  color: #334155 !important;
+}
+.stitch-badge-success::before {
+  background-color: #64748B;
+}
+
+.stitch-badge-error {
+  color: #991B1B !important;
+}
+.stitch-badge-error::before {
+  background-color: #DC2626;
+}
+
+.stitch-badge-info,
+.stitch-badge-primary {
+  color: #1E3A5F !important;
+}
+.stitch-badge-info::before,
+.stitch-badge-primary::before {
+  background-color: #1E3A5F;
+}

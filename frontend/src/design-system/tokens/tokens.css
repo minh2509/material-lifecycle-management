@@ -1,0 +1,116 @@
+:root {
+  color-scheme: light;
+
+  /* Brand & Core Semantic Colors — Enterprise Industrial / Government UI (#1E3A5F Navy) */
+  --primary: #1E3A5F;
+  --on-primary: #ffffff;
+  --primary-container: #E8EFF7;
+  --on-primary-container: #102A43;
+  --primary-hover: #152C49;
+  --primary-active: #0D1B2E;
+
+  --secondary: #475569;
+  --secondary-container: #F1F5F9;
+  --on-secondary-container: #1E293B;
+
+  --surface: #ffffff;
+  --surface-low: #F4F6F9;
+  --surface-container-low: #F8FAFC;
+  --surface-container: #EEF2F6;
+  --surface-high: #E2E8F0;
+
+  --on-surface: #0F172A;
+  --on-surface-variant: #475569;
+  --on-surface-muted: #64748B;
+
+  --outline: #CBD5E1;
+  --outline-variant: #E2E8F0;
+  --outline-subtle: #EDF2F7;
+
+  /* Status Colors — Restrained, disciplined administrative palette */
+  --warning: #9A3412;
+  --warning-container: #FFFBEB;
+  --on-warning-container: #78350F;
+
+  --success: #334155;
+  --success-container: #F1F5F9;
+  --on-success-container: #0F172A;
+
+  --error: #991B1B;
+  --error-container: #FEF2F2;
+  --on-error-container: #7F1D1D;
+
+  --info: #1E3A5F;
+  --info-container: #E8EFF7;
+  --on-info-container: #102A43;
+
+  /* Chart Streams — Restrained Administrative Monochromatic / Slate Hierarchy */
+  --chart-in: #1E3A5F;        /* Nhập kho: Xanh than chủ đạo */
+  --chart-in-sub: #3B597C;    /* Nhập phục hồi: Sắc độ than sáng */
+  --chart-out: #475569;       /* Xuất kho: Slate trầm */
+  --chart-out-sub: #64748B;   /* Xuất sửa chữa: Slate trung tính */
+  --chart-rec: #94A3B8;       /* Thu hồi: Slate nhạt */
+  --chart-rec-sub: #CBD5E1;   /* Phế liệu: Xám bạc */
+
+  /* Typography */
+  --font-headline: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Inter", monospace;
+
+  /* Elevation & Shadows — Subtle, low-contrast, crisp outline-driven */
+  --shadow-subtle: 0 1px 2px 0 rgba(15, 23, 42, 0.04);
+  --shadow-soft: 0 1px 2px 0 rgba(15, 23, 42, 0.04);
+  --shadow-card: 0 1px 2px 0 rgba(15, 23, 42, 0.04);
+  --shadow-hover: 0 3px 8px -2px rgba(15, 23, 42, 0.08);
+  --shadow-tooltip: 0 4px 12px -2px rgba(15, 23, 42, 0.16);
+  --shadow-dropdown: 0 4px 12px 0 rgba(15, 23, 42, 0.08);
+  --shadow-drawer: -4px 0 24px 0 rgba(15, 23, 42, 0.10);
+
+  /* Unified Corner Radii — Structured, disciplined enterprise geometry */
+  --radius-xs: 3px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-pill: 6px; /* Unified: standard rounded rect for official public sector software */
+}
+
+/* Base Utility Classes */
+.font-headline { font-family: var(--font-headline); }
+.font-body { font-family: var(--font-body); }
+.font-mono, .tabular-nums {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Stitch Standard Uniform Button (formerly Pill) */
+.btn-stitch-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 0 16px;
+  height: 36px;
+  min-height: 36px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--outline);
+  background: var(--surface);
+  color: var(--on-surface-variant);
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  flex-shrink: 0;
+}
+.btn-stitch-pill:hover {
+  background: var(--surface-container);
+  color: var(--on-surface);
+  border-color: var(--secondary);
+}
+.btn-stitch-pill.active {
+  background: var(--primary);
+  color: var(--on-primary);
+  border-color: var(--primary);
+  font-weight: 600;
+  box-shadow: none;
+}

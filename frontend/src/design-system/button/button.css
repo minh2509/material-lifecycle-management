@@ -1,0 +1,153 @@
+/* Buttons — Unified Government Enterprise Standard (Height 36px, Border-Radius 6px) */
+.btn {
+  font-family: var(--font-body);
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  transition: all 0.12s ease;
+}
+
+/* Bootstrap Button Overrides for Institutional Navy Consistency */
+.btn-primary {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+  color: var(--on-primary) !important;
+  border-radius: var(--radius-md) !important;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background-color: var(--primary-hover) !important;
+  border-color: var(--primary-hover) !important;
+  color: var(--on-primary) !important;
+}
+.btn-primary:active {
+  background-color: var(--primary-active) !important;
+  border-color: var(--primary-active) !important;
+}
+.btn-outline-primary {
+  color: var(--primary) !important;
+  border-color: var(--primary) !important;
+  border-radius: var(--radius-md) !important;
+}
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+  color: #ffffff !important;
+}
+.btn-light {
+  background-color: var(--surface) !important;
+  border: 1px solid var(--outline-variant) !important;
+  color: var(--on-surface-variant) !important;
+  border-radius: var(--radius-md) !important;
+}
+.btn-light:hover {
+  background-color: var(--surface-container) !important;
+  color: var(--on-surface) !important;
+  border-color: var(--outline) !important;
+}
+.btn-outline-secondary {
+  border-color: var(--outline) !important;
+  color: var(--on-surface-variant) !important;
+  border-radius: var(--radius-md) !important;
+}
+.btn-outline-secondary:hover {
+  background-color: var(--surface-container) !important;
+  color: var(--on-surface) !important;
+  border-color: var(--secondary) !important;
+}
+.btn-sm {
+  min-height: 32px;
+  height: 32px;
+  padding: 0 12px;
+  font-size: 12.5px;
+  border-radius: var(--radius-md) !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-stitch-primary {
+  background: var(--primary);
+  color: #fff;
+  border: 1px solid var(--primary);
+  border-radius: var(--radius-md);
+  padding: 0 16px;
+  font-weight: 500;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.12s ease;
+  height: 36px;
+  min-height: 36px;
+  box-shadow: var(--shadow-subtle);
+  text-decoration: none;
+}
+.btn-stitch-primary:hover {
+  background: var(--primary-hover);
+  border-color: var(--primary-hover);
+  color: #fff;
+}
+.btn-stitch-primary:active {
+  background: var(--primary-active);
+  transform: translateY(1px);
+}
+
+.btn-stitch-secondary {
+  background: var(--surface);
+  color: var(--on-surface);
+  border: 1px solid var(--outline);
+  border-radius: var(--radius-md);
+  padding: 0 16px;
+  font-weight: 500;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  height: 36px;
+  min-height: 36px;
+  box-shadow: var(--shadow-subtle);
+  transition: all 0.12s ease;
+}
+.btn-stitch-secondary:hover {
+  background: var(--surface-container);
+  color: var(--on-surface);
+  border-color: var(--secondary);
+}
+.btn-stitch-secondary:active {
+  transform: translateY(1px);
+}
+
+.btn-stitch-outline-sm {
+  background: var(--surface);
+  border: 1px solid var(--outline);
+  border-radius: var(--radius-md);
+  padding: 0 12px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--on-surface);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  height: 30px;
+  min-height: 30px;
+  transition: all 0.12s ease;
+  text-decoration: none;
+}
+.btn-stitch-outline-sm:hover:not(:disabled) {
+  background: var(--surface-container);
+  border-color: var(--secondary);
+  color: var(--on-surface);
+}
+.btn-stitch-outline-sm:active:not(:disabled) {
+  transform: translateY(1px);
+}
+.btn-stitch-outline-sm:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}

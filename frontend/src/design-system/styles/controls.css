@@ -1,0 +1,164 @@
+/* ==========================================================================
+   UNIFIED PUBLIC-SECTOR FORM & COMPONENT METRICS (Chỉn chu, Đều nhau, Phẳng)
+   ========================================================================== */
+
+/* Đồng nhất chiều cao 36px cho toàn bộ thanh lọc dữ liệu: Input = Select = Nút */
+.input-group-sm > .form-control,
+.input-group > .form-control[type="search"],
+.input-group > .form-control[type="text"] {
+  height: 36px !important;
+  min-height: 36px !important;
+  font-size: 13px !important;
+  border-color: var(--outline) !important;
+  border-radius: var(--radius-md) !important;
+  color: var(--on-surface) !important;
+}
+.input-group > .input-group-text {
+  height: 36px !important;
+  min-height: 36px !important;
+  border-color: var(--outline) !important;
+  border-radius: var(--radius-md) 0 0 var(--radius-md) !important;
+  background-color: #ffffff !important;
+  color: var(--on-surface-muted) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-group > .form-control.border-start-0 {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+/* Đồng nhất các nút trong thanh toolbar lọc */
+.stitch-card .btn-outline-secondary,
+.stitch-card .btn-outline-secondary.btn-sm,
+.stitch-card .btn-secondary.btn-sm {
+  height: 36px !important;
+  min-height: 36px !important;
+  border-radius: var(--radius-md) !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  padding: 0 14px !important;
+  border-color: var(--outline) !important;
+  color: var(--on-surface) !important;
+  background-color: var(--surface) !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-shadow: var(--shadow-subtle);
+  transition: all 0.12s ease;
+}
+.stitch-card .btn-outline-secondary:hover,
+.stitch-card .btn-outline-secondary.btn-sm:hover {
+  background-color: var(--surface-container) !important;
+  border-color: var(--secondary) !important;
+  color: var(--on-surface) !important;
+}
+
+/* Đồng nhất hệ thống Tabs phân hệ giữa các trang (Receipt, Issue, Recovery, Disposal, Catalog, Admin, Report) */
+.d-flex.border-bottom > .btn.btn-sm,
+.d-flex.border-bottom.border-outline-variant > .btn.btn-sm {
+  height: 34px !important;
+  min-height: 34px !important;
+  padding: 0 14px !important;
+  border-radius: var(--radius-md) !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: all 0.15s ease;
+}
+.d-flex.border-bottom > .btn.btn-sm.btn-primary,
+.d-flex.border-bottom.border-outline-variant > .btn.btn-sm.btn-primary {
+  background-color: var(--primary) !important;
+  border: 1px solid var(--primary) !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  box-shadow: var(--shadow-subtle) !important;
+}
+.d-flex.border-bottom > .btn.btn-sm.btn-light,
+.d-flex.border-bottom.border-outline-variant > .btn.btn-sm.btn-light {
+  background-color: var(--surface) !important;
+  border: 1px solid var(--outline-variant) !important;
+  color: var(--on-surface-variant) !important;
+}
+.d-flex.border-bottom > .btn.btn-sm.btn-light:hover,
+.d-flex.border-bottom.border-outline-variant > .btn.btn-sm.btn-light:hover {
+  background-color: var(--surface-low) !important;
+  border-color: var(--outline) !important;
+  color: var(--on-surface) !important;
+}
+
+/* Nút thao tác trong bảng dữ liệu: Đồng nhất tuyệt đối 28px, bo góc 6px, TUYỆT ĐỐI KHÔNG BỊ RỚT DÒNG CHỮ */
+.stitch-table .btn-stitch-primary,
+.stitch-table .btn-stitch-outline-sm,
+.stitch-table .btn-stitch-table-action,
+.stitch-table .btn-primary.btn-sm,
+.stitch-table .btn.btn-sm,
+.btn-stitch-table-action {
+  height: 28px !important;
+  min-height: 28px !important;
+  padding: 0 12px !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  border-radius: var(--radius-md) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 4px !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+  line-height: 1 !important;
+  text-decoration: none !important;
+}
+
+.stitch-table .btn-stitch-outline-sm,
+.btn-stitch-table-action.btn-stitch-outline-sm {
+  background: var(--surface) !important;
+  border: 1px solid var(--outline) !important;
+  color: var(--on-surface) !important;
+}
+.stitch-table .btn-stitch-outline-sm:hover,
+.btn-stitch-table-action.btn-stitch-outline-sm:hover {
+  background: var(--surface-container) !important;
+  border-color: var(--secondary) !important;
+  color: var(--on-surface) !important;
+}
+
+.stitch-table .btn-stitch-primary,
+.btn-stitch-table-action.btn-stitch-primary {
+  background: var(--primary) !important;
+  border: 1px solid var(--primary) !important;
+  color: #ffffff !important;
+}
+.stitch-table .btn-stitch-primary:hover,
+.btn-stitch-table-action.btn-stitch-primary:hover {
+  background: var(--primary-hover) !important;
+  border-color: var(--primary-hover) !important;
+  color: #ffffff !important;
+}
+
+/* Chuẩn hóa Modal Dialog: Bo góc 8px, viền phẳng nghiêm túc */
+.modal-content {
+  border-radius: var(--radius-lg) !important;
+  border: 1px solid var(--outline) !important;
+  box-shadow: 0 16px 36px -4px rgba(15, 23, 42, 0.2) !important;
+  background-color: var(--surface) !important;
+}
+.modal-header {
+  border-bottom: 1px solid var(--outline-variant) !important;
+  padding: 12px 18px !important;
+  background-color: var(--surface-low) !important;
+  border-top-left-radius: var(--radius-lg) !important;
+  border-top-right-radius: var(--radius-lg) !important;
+}
+.modal-footer {
+  border-top: 1px solid var(--outline-variant) !important;
+  padding: 12px 18px !important;
+  background-color: var(--surface-low) !important;
+  border-bottom-left-radius: var(--radius-lg) !important;
+  border-bottom-right-radius: var(--radius-lg) !important;
+}

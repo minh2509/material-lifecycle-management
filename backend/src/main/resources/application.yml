@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: material-management
+  profiles:
+    default: local
+  modulith:
+    detection-strategy: explicitly-annotated
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    clean-disabled: true
+    baseline-on-migrate: false
+  mvc:
+    problemdetails:
+      enabled: true
+server:
+  address: 127.0.0.1
+  port: 8081
+  error:
+    include-message: never
+    include-binding-errors: never
+    include-stacktrace: never
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: never
+springdoc:
+  api-docs:
+    enabled: false
+  swagger-ui:
+    enabled: false
+  paths-to-match: /api/**
+app:
+  cors:
+    allowed-origins: []

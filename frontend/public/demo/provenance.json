@@ -1,0 +1,266 @@
+{
+  "contract": "DemoDataset.provenance",
+  "corrections": [
+    {
+      "group": "Bảo hộ lao động",
+      "groupRaw": null,
+      "id": "D-09/BHLD",
+      "prefix": "BHLD",
+      "reason": "Tiền tố BHLD không có dòng chú giải trong cột F/G; D-09 xác nhận là Bảo hộ lao động."
+    },
+    {
+      "group": "Bơm hơi",
+      "groupRaw": "Bơm hơi",
+      "id": "D-09/BH",
+      "prefix": "BH",
+      "reason": "Cột F/G có mã BH trùng tại F3 và F28 (F28 ghi 'Bảo hộ ao động'); D-09 xác nhận BH là Bơm hơi, giữ file nguồn nguyên bản."
+    }
+  ],
+  "counts": {
+    "admitted": 1069,
+    "diagnostic": 5,
+    "rowsRead": 1074
+  },
+  "diagnostics": [
+    {
+      "code": "BL-028",
+      "issue": "missing_unit",
+      "name": "Long đen vênh M12",
+      "problems": [
+        {
+          "cell": "C136",
+          "code": "missing_unit"
+        }
+      ],
+      "row": 136,
+      "unit": null
+    },
+    {
+      "code": "KK-014",
+      "issue": "placeholder_unit",
+      "name": "Thanh cầu đấu 15A",
+      "problems": [
+        {
+          "cell": "C495",
+          "code": "placeholder_unit",
+          "raw": "0"
+        }
+      ],
+      "row": 495,
+      "unit": "0"
+    },
+    {
+      "code": "KK-266",
+      "issue": "missing_unit",
+      "name": "Ống tổ ong cao su",
+      "problems": [
+        {
+          "cell": "C747",
+          "code": "missing_unit"
+        }
+      ],
+      "row": 747,
+      "unit": null
+    },
+    {
+      "code": "KK-267",
+      "issue": "missing_unit",
+      "name": "Phễu cổ ống phun",
+      "problems": [
+        {
+          "cell": "C748",
+          "code": "missing_unit"
+        }
+      ],
+      "row": 748,
+      "unit": null
+    },
+    {
+      "code": "KK-268",
+      "issue": "missing_unit",
+      "name": "Đầu cửa xả",
+      "problems": [
+        {
+          "cell": "C749",
+          "code": "missing_unit"
+        }
+      ],
+      "row": 749,
+      "unit": null
+    }
+  ],
+  "groupLegend": {
+    "BH": [
+      {
+        "name": "Bơm hơi",
+        "row": 3
+      },
+      {
+        "name": "Bảo hộ ao động",
+        "row": 28
+      }
+    ],
+    "BL": [
+      {
+        "name": "Bu lông",
+        "row": 4
+      }
+    ],
+    "BT": [
+      {
+        "name": "Băng tải",
+        "row": 5
+      }
+    ],
+    "CD": [
+      {
+        "name": "Cáp điện",
+        "row": 26
+      }
+    ],
+    "CK": [
+      {
+        "name": "Cơ khí",
+        "row": 6
+      }
+    ],
+    "CT": [
+      {
+        "name": "Cáp thép",
+        "row": 7
+      }
+    ],
+    "DC": [
+      {
+        "name": "Động cơ",
+        "row": 8
+      }
+    ],
+    "DD": [
+      {
+        "name": "Vật tư điện",
+        "row": 29
+      }
+    ],
+    "DL": [
+      {
+        "name": "Đào lò",
+        "row": 9
+      }
+    ],
+    "DM": [
+      {
+        "name": "Dầu mỡ",
+        "row": 10
+      }
+    ],
+    "DN": [
+      {
+        "name": "Đường nước",
+        "row": 11
+      }
+    ],
+    "GL": [
+      {
+        "name": "Gỗ lò",
+        "row": 12
+      }
+    ],
+    "GP": [
+      {
+        "name": "Gioong phớt",
+        "row": 13
+      }
+    ],
+    "HC": [
+      {
+        "name": "Hậu cần",
+        "row": 27
+      }
+    ],
+    "KH": [
+      {
+        "name": "Khoan",
+        "row": 14
+      }
+    ],
+    "KK": [
+      {
+        "name": "Khác",
+        "row": 15
+      }
+    ],
+    "MC": [
+      {
+        "name": "Máng cào",
+        "row": 16
+      }
+    ],
+    "MX": [
+      {
+        "name": "Máy xúc",
+        "row": 17
+      }
+    ],
+    "Mã LVT": [
+      {
+        "name": "Tên loại vật tư",
+        "row": 2
+      }
+    ],
+    "ST": [
+      {
+        "name": "Sắt thép",
+        "row": 18
+      }
+    ],
+    "TD": [
+      {
+        "name": "Trạm dịch",
+        "row": 19
+      }
+    ],
+    "TDD": [
+      {
+        "name": "Tàu điện",
+        "row": 20
+      }
+    ],
+    "VB": [
+      {
+        "name": "Vòng bi",
+        "row": 21
+      }
+    ],
+    "VC": [
+      {
+        "name": "Vì chống",
+        "row": 22
+      }
+    ],
+    "VLN": [
+      {
+        "name": "Vật liệu nổ",
+        "row": 23
+      }
+    ],
+    "XD": [
+      {
+        "name": "VLXD",
+        "row": 24
+      }
+    ],
+    "ZH": [
+      {
+        "name": "Giá ZH",
+        "row": 25
+      }
+    ]
+  },
+  "source": {
+    "path": "docs/reference/danh-sach-vat-tu-khach-hang.xlsx",
+    "sha256": "05655e249c9db571de17b0630f2f2a3540cfa795719313844a2a6b68575db869",
+    "sheet": "Sheet2"
+  },
+  "version": "0.1"
+}

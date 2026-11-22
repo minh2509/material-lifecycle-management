@@ -1,0 +1,36 @@
+/* Global Resets & Base Typography */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  background-color: var(--surface-low);
+  color: var(--on-surface);
+  font-family: var(--font-body);
+  font-size: 14.5px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, .font-headline {
+  font-family: var(--font-headline);
+  font-weight: 700;
+  color: var(--on-surface);
+  letter-spacing: -0.015em;
+}
+
+.text-muted-variant { color: var(--on-surface-variant) !important; }
+.text-muted-subtle { color: var(--on-surface-muted) !important; }
+
+/* Focus styles for keyboard accessibility */
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}

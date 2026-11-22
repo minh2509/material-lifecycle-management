@@ -1,0 +1,133 @@
+/* App Shell Layout — Fixed Shell Architecture (Header/Sidebar cố định, Nội dung cuộn độc lập) */
+.app-layout {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden; /* Cố định toàn bộ khung app, không cuộn body */
+  background-color: var(--surface-low);
+}
+
+/* Desktop Sidebar (230px, cố định, không cuộn cùng nội dung) */
+.app-sidebar {
+  width: 230px;
+  height: 100vh;
+  max-height: 100vh;
+  background: var(--surface);
+  border-right: 1px solid var(--outline-variant);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-shrink: 0;
+  z-index: 100;
+  overflow: hidden;
+  transition: width 0.2s ease;
+}
+.app-sidebar.collapsed { width: 72px; }
+
+.app-sidebar.collapsed .sidebar-header {
+  padding: 0;
+  justify-content: center;
+}
+
+.sidebar-brand-toggle-btn {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  transition: all 0.15s ease;
+}
+.sidebar-brand-toggle-btn:hover {
+  background: #EFF6FF;
+}
+.sidebar-brand-toggle-btn .brand-box-icon {
+  display: block;
+}
+.sidebar-brand-toggle-btn .brand-expand-icon {
+  display: none;
+}
+.sidebar-brand-toggle-btn:hover .brand-box-icon {
+  display: none;
+}
+.sidebar-brand-toggle-btn:hover .brand-expand-icon {
+  display: block;
+}
+
+.app-sidebar.collapsed nav {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  align-items: center;
+}
+
+.app-sidebar.collapsed .sidebar-nav-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.app-sidebar.collapsed .sidebar-nav-group > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-sidebar.collapsed .nav-item-link {
+  width: 44px;
+  height: 44px;
+  min-height: 44px;
+  padding: 0;
+  margin: 2px auto;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.app-sidebar.collapsed .nav-item-link svg {
+  margin: 0;
+}
+
+.sidebar-header {
+  height: 56px;
+  padding: 0 16px;
+  border-bottom: 1px solid var(--outline-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.sidebar-brand-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-soft);
+  flex-shrink: 0;
+}
+
+.sidebar-collapse-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--on-surface-variant);
+  transition: all 0.15s ease;
+}
+.sidebar-collapse-btn:hover {
+  background: #f1f5f9;
+  color: var(--on-surface);
+}
